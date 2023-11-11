@@ -11,6 +11,8 @@ public class Pa2U1P5RgDeberApplication {
 		dibujarCruz();
 		System.out.println("\n");
 		dibujarCuadrado(6);
+		System.out.println("\n");
+		dibujarTriangulo(7);
 	}
 	public static void dibujarCruz() {
 		int tamaño = 5;
@@ -36,6 +38,20 @@ public class Pa2U1P5RgDeberApplication {
                     System.out.print(" ");
                 }
             }
+            System.out.println();
+        }
+    }
+	
+	public static void dibujarTriangulo(int altura) {
+        for (int i = 0; i < altura; i++) {
+            for (int j = 0; j < i; j++) {
+                System.out.print("  ");
+            }
+
+            for (int k = 0; k < (altura - i) * 2 - 1; k++) {
+                System.out.print("R");
+            }
+
             System.out.println();
         }
     }
