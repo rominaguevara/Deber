@@ -9,6 +9,8 @@ public class Pa2U1P5RgDeberApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(Pa2U1P5RgDeberApplication.class, args);
 		dibujarCruz();
+		System.out.println("\n");
+		dibujarCuadrado(6);
 	}
 	public static void dibujarCruz() {
 		int tamaño = 5;
@@ -24,4 +26,17 @@ public class Pa2U1P5RgDeberApplication {
 			System.out.println();
 		}
 	}
+	
+	public static void dibujarCuadrado(int lado) {
+        for (int i = 0; i < lado; i++) {
+            for (int j = 0; j < lado; j++) {
+                if (i == 0 || i == lado - 1 || j == 0 || j == lado - 1) {
+                    System.out.print("R");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+    }
 }
